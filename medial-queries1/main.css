@@ -1,3 +1,39 @@
+
+
 body {
-  background: blanchedalmond;
+  background: pink;
 }
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-size: 4em;
+}
+.a {
+  border: 3px solid black;
+  display: flex;
+  min-width: 170vh;
+  min-height: 25vh;
+  align-items: center;
+  margin: 1%;
+  
+}
+.b {
+  border: 3px solid black;
+  display: flex;
+  min-width: 135vh;
+  min-height: 60vh;
+  align-items: center;
+}
+.c {
+  border: 3px solid black;
+  display: flex;
+  min-width: 45vh;
+  align-items: center;
+}
+
+@media (min-width: 600px) {
+  .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
